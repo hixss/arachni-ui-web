@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5.1'
+gem 'rails', '6.0.3.1'
 
 # Web server.
 gem 'puma'
@@ -19,25 +19,25 @@ platforms :jruby do
 end
 
 # JavaScript support framework.
-gem 'jquery-rails', '2.1.4'
+gem 'jquery-rails', '4.4.0'
 
 # UI/CSS framework.
-gem 'bootstrap-sass', '2.3.1.0'
+gem 'bootstrap-sass', '3.4.1'
 
 # Markdown to HTML conversion.
 gem 'kramdown'
 
 # HTML form helper.
-gem 'simple_form', '~> 3.0.1'
+gem 'simple_form', '~> 5.0.2'
 
 # User management/authentication.
-gem "devise", "~> 3.5.1"
+gem "devise", "~> 4.7.1"
 
 # User authorization management.
 gem 'cancan', '~> 1.6.10'
 
 # User role management.
-gem 'rolify', '~> 4.0.0'
+gem 'rolify', '~> 5.3.0'
 
 # Pagination helper.
 gem 'kaminari'
@@ -54,24 +54,24 @@ end
 
 group :development, :test do
     # Test framework.
-    gem 'rspec-rails', '>= 2.11.0'
+    gem 'rspec-rails', '>= 4.0.1'
 end
 
 group :assets do
     # Sass CSS preprocessor.
-    gem 'sass-rails', '~> 4.0.0'
+    gem 'sass-rails', '~> 6.0.0'
 
     # CoffeeScript JavaScript preprocessor, stick with '1.8.0' for Windows
     # compat.
-    gem 'coffee-script-source', '1.8.0'
-    gem 'coffee-rails', '~> 4.0.0'
+    gem 'coffee-script-source', '1.12.2'
+    gem 'coffee-rails', '~> 5.0.0'
 
     # JavaScript compression.
-    gem 'uglifier', '~> 2.7.2'
+    gem 'uglifier', '~> 4.2.0'
 
     # JavaScript interpreters.
     gem 'therubyrhino', platform: 'jruby'
-    gem 'libv8',    '~> 3.16.14.11', platform: 'ruby'
+    gem 'libv8',    '~> 7.3.492.27.1', platform: 'ruby'
 
     # JavaScript interpreter wrapper.
     gem 'therubyracer', platform: 'ruby'
@@ -79,16 +79,16 @@ end
 
 group :test do
     # Browser simulator.
-    gem 'capybara',         '>= 1.1.2'
+    gem 'capybara',         '>= 3.32.2'
 
     # BDD for Rails.
-    gem 'cucumber-rails',   '>= 1.3.0', require: false
+    gem 'cucumber-rails',   '>= 2.0.0', require: false
 
     # Does what its name suggests.
-    gem 'database_cleaner', '>= 0.8.0'
+    gem 'database_cleaner', '>= 1.8.5'
 
     # Saves and launches the last failing webapp page.
-    gem 'launchy',          '>= 2.2.0'
+    gem 'launchy',          '>= 2.5.0'
 
     # Model factory.
     gem 'factory_girl'
@@ -97,4 +97,4 @@ group :test do
     gem 'faker'
 end
 
-gem 'arachni'
+gem 'arachni',:github => 'hixss/arachni',:branch => 'experimental'
