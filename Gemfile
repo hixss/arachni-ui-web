@@ -74,7 +74,7 @@ group :assets do
     gem 'libv8',    '~> 3.11.8', platform: 'ruby'
 
     # JavaScript interpreter wrapper.
-    gem 'therubyracer', platform: 'ruby'
+    gem 'therubyracer','~> 0.12.3', platform: 'ruby'
 end
 
 group :test do
